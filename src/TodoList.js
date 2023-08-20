@@ -11,6 +11,7 @@ export default function TodoList({
      return(
           <>
           <h1>Add To Do</h1>
+          <h6>to edit your task, just key on it</h6>
           <input
           type="text"
           onKeyDown={(e)=> {
@@ -28,6 +29,8 @@ export default function TodoList({
                               <ToDo
                               key={todo.id}
                               todo={todo}
+                              name={todo}
+                         
                               completeTodo={completeTodo}
                               editTodo={editTodo}
                               deleteTodo={deleteTodo}

@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './App.css'
 export default function ToDo({ todo, completeTodo, editTodo, deleteTodo }) {
      const [showInput, setShowInput] = useState(false)
 
@@ -12,9 +13,11 @@ export default function ToDo({ todo, completeTodo, editTodo, deleteTodo }) {
                          }}>
                          {todo.text}
                     </h2>
+                    
                     <input
                          style={{ display: showInput ? "block" : "none" }}
                          type="text"
+                         defaultValue={todo.text}
 
                          onKeyDown={(e) => {
                               if (e.key === "Enter") {
@@ -23,6 +26,7 @@ export default function ToDo({ todo, completeTodo, editTodo, deleteTodo }) {
                               }
                          }}
                     />
+                    
                </div>
                <label className="middle">
                     completed

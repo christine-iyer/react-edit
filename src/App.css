@@ -18,14 +18,24 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+.left{
+  background-color: antiquewhite;
+  justify-content: end;
+
+}
+ul{
+  list-style: none;
+  align-items:end;
+  border-color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -36,3 +46,4 @@
     transform: rotate(360deg);
   }
 }
+
